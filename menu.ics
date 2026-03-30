@@ -1,0 +1,130 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:ics.py - http://git.io/lLljaA
+BEGIN:VEVENT
+DESCRIPTION:凉菜：素拼\n热菜：鸡柳牙＋签肉 小酥肉 清炒腐竹 千页豆腐\n蒜蓉娃娃菜 尖椒肉丝\n水果：应季水果\n主食：大米 打卤面\n汤：燕麦小米粥
+DTSTART:20260405T120000Z
+SUMMARY:星期日 午 餐
+UID:星期日-午 餐-2026-04-05
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：小葱拌豆腐\n热莱：土豆片 清炒白萝卜丝 醋溜白菜 清朝腐竹\n主食：南瓜 花卷馒头 煮鸡蛋 煎蛋 油条 肉丸方便面\n汤：小米粥 豆浆
+DTSTART:20260331T120000Z
+SUMMARY:星期二 早 餐
+UID:星期二-早 餐-2026-03-31
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：素拼\n热菜：清炒冬瓜 清炒腐竹 清炒绿豆芽 土豆丝\n主食：玉米 花卷 馒头 煮鸡蛋 煎蛋 油条 方便面肉丸\n汤：南瓜小米粥 牛奶
+DTSTART:20260330T120000Z
+SUMMARY:星期一 早 餐
+UID:星期一-早 餐-2026-03-30
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：素拼\n热菜：合菜(肉） 干辣椒炒包菜丝 麻辣土豆片 蒜苗鸡蛋\n主食：花样馒头 花卷 葱花饼 老干妈炒饭 馄饨\n汤：玉米疙糁 酸菜不烂汤
+DTSTART:20260330T120000Z
+SUMMARY:星期一 晚 餐
+UID:星期一-晚 餐-2026-03-30
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜:凉拌海带丝\n热菜：尖椒土豆丝 家常豆腐 小炒肉 蒜蓉油麦菜\n主食：馒头花卷 烤馍片 韭菜盒 鸡蛋炒小米 酸辣粉\n汤：黄豆小米粥 胡辣汤
+DTSTART:20260331T120000Z
+SUMMARY:星期二 晚 餐
+UID:星期二-晚 餐-2026-03-31
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜；拌黄瓜\n热菜：土豆片 葱烧豆腐 西红柿茄丝 清炒冬瓜\n主食：南瓜 花样馒头 豆沙包 煮鸡蛋 煎蛋肉丸方便面\n汤；南瓜小米粥 牛奶
+DTSTART:20260402T120000Z
+SUMMARY:星期四 早 餐
+UID:星期四-早 餐-2026-04-02
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：拌莲菜\n热菜: 墨西哥烤肉 手撕包菜 蒜蓉娃娃菜 口味菜花\n主食：馒头 花卷 油条 鸡蛋大葱炒大米 麻辣烫\n汤：玉米豆汤 米琪
+DTSTART:20260402T120000Z
+SUMMARY:星期四 晚 餐
+UID:星期四-晚 餐-2026-04-02
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：皮冻\n热菜；水煮肉片 腐竹炒肉 炸鸡柳 红烧茄子 炝锅油菜 大烩菜（肉）\n水果：应季水果\n主食：大米 卤面\n汤： 江米粥 银耳雪梨汤
+DTSTART:20260401T120000Z
+SUMMARY:星期三 午 餐
+UID:星期三-午 餐-2026-04-01
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：凉拌皮冻\n热菜：红烧鱼块 西红柿炒鸡蛋 回锅肉 麻辣豆腐 炝锅油菜 蒜蓉茄子\n水果：应季水果\n主食：大米 炒面片\n汤；红枣黄豆小米粥
+DTSTART:20260404T120000Z
+SUMMARY:星期六 午 餐
+UID:星期六-午 餐-2026-04-04
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：小葱拌豆腐\n热菜：土豆丝 炒绿豆芽 清炒瓜丝 醋溜白菜\n主食：玉米 馒头 花卷 油条 煮鸡蛋 煎蛋 肉丸方便面\n汤：花生小米粥 豆浆
+DTSTART:20260403T120000Z
+SUMMARY:星期五 早 餐
+UID:星期五-早 餐-2026-04-03
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：水煮花生\n热菜：炒腐竹 水蒸蛋 尖椒肉丝 合菜（素）\n主食：花卷 馒头 水煎包 青椒火腿炒饭\n汤：小米粥 西红柿鸡蛋不烂汤
+DTSTART:20260403T120000Z
+SUMMARY:星期五 晚 餐
+UID:星期五-晚 餐-2026-04-03
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：水煮花生\n热菜：土豆烧排骨 尖椒肉丝 鸡蛋西红柿 烩菜 清炒油菜 炸薯条\n水果：应季水果\n主食：大米 打卤面\n汤：绿豆小米粥 紫菜鸡蛋汤
+DTSTART:20260330T120000Z
+SUMMARY:星期一 午 餐
+UID:星期一-午 餐-2026-03-30
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：西芹黄豆\n热菜：卤鸡腿 蘑菇肉片 宫保鸡丁 干锅菜花 土豆烧豆角 火腿冬瓜\n水果：应季水果\n主食：大米 清汤饸络\n汤：花生小米粥 水果汤
+DTSTART:20260331T120000Z
+SUMMARY:星期二 午 餐
+UID:星期二-午 餐-2026-03-31
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：凉拌猪头肉\n热菜：麻辣香锅 核桃肉 莲菜丁炒肉 酸辣狼牙土豆 蒜蓉油麦菜 麻婆豆腐\n水果：应季水果\n主食：大米 炒猫耳朵（西红柿 鸡蛋 火腿）\n汤：杂豆汤 山楂汤
+DTSTART:20260402T120000Z
+SUMMARY:星期四 午 餐
+UID:星期四-午 餐-2026-04-02
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：小葱豆腐\n热菜：土豆丝 醋溜白菜 炝炒萝卜丝 葱烧豆腐\n主食：馒头 花卷 南瓜 茶叶蛋 煎蛋 肉丸方便面\n汤：南瓜小米粥
+DTSTART:20260405T120000Z
+SUMMARY:星期日 早 餐
+UID:星期日-早 餐-2026-04-05
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：拌莲菜\n热菜：油麦菜 清炒小白菜 洋葱炒肉 蒜苗炒腊肉\n主食：水煎包 馒头 葱花饼 炒饼丝\n汤：小米粥 面片汤
+DTSTART:20260405T120000Z
+SUMMARY:星期日 晚 餐
+UID:星期日-晚 餐-2026-04-05
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：凉拌海带\n热菜：大盘鸡 （木耳大葱）鱼香肉丝 咸肉炒冬瓜\n日本豆腐 西红柿炒鸡蛋 清炒菜花\n水果：应季水果\n主食：大米 重庆小面\n汤：江米粥 紫菜虾米汤
+DTSTART:20260403T120000Z
+SUMMARY:星期五 午 餐
+UID:星期五-午 餐-2026-04-03
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：素拼\n热菜：小白菜 黄豆芽 清炒瓜丝 土豆丝\n主食：花卷 红薯 油条 茶叶蛋 煎蛋 包子 肉丸方便面\n汤：小米饭 油茶
+DTSTART:20260401T120000Z
+SUMMARY:星期三 早 餐
+UID:星期三-早 餐-2026-04-01
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：豆腐卷\n热菜：尖椒土豆片 萝卜丝豆芽 清炒东瓜 手撕包菜\n主食：馒头 花卷 南瓜 煮鸡蛋 煎蛋 肉丸方便面\n汤：南瓜小米粥 牛奶
+DTSTART:20260404T120000Z
+SUMMARY:星期六 早 餐
+UID:星期六-早 餐-2026-04-04
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：灌肠\n热菜：菠萝鸡丁 西红柿炒鸡蛋 尖椒土豆丝 酸菜粉皮\n主食：素包子 杂粮馒头 肉夹馍 糖炒馒头 骨汤米线\n汤：黑米粥 西红柿鸡蛋不烂汤
+DTSTART:20260401T120000Z
+SUMMARY:星期三 晚 餐
+UID:星期三-晚 餐-2026-04-01
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：凉拌面筋\n热菜：土豆片炒肉 手撕包菜 肉沫豆角 大葱烧豆腐\n主食：土豆丝炒煎饼 小花卷 包子 玉米饼\n汤：玉米疙糁
+DTSTART:20260404T120000Z
+SUMMARY:星期六 晚 餐
+UID:星期六-晚 餐-2026-04-04
+END:VEVENT
+END:VCALENDAR
