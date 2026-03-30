@@ -1,0 +1,34 @@
+name: update-menu
+
+on:
+  schedule:
+    - cron: '0 2 * * 0'  # 每周日（UTC时间）
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install requests beautifulsoup4 lxml ics
+
+      - name: Run script
+        run: python menus_craw_final.py   # ← 改成你的文件名
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add menu.ics
+          git commit -m "update menu" || echo "no changes"
+          git push
