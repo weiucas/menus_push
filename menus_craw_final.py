@@ -1,136 +1,208 @@
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime, timedelta, time
+from urllib.parse import urljoin
+from datetime import datetime, timedelta
 from ics import Calendar, Event
 import re
-import pytz
+from zoneinfo import ZoneInfo  # ✅ 时区
 
-def crawl_menu_and_generate_ics():
-    url = "https://hqb.sxist.edu.cn/info/1381/6404.htm"
+
+# ===============================
+# 1️⃣ 获取最新菜单
+# ===============================
+def get_latest_menu_url():
+    base_url = "https://hqb.sxist.edu.cn/kjtd/cyfw.htm"
+
     headers = {"User-Agent": "Mozilla/5.0"}
-
-    response = requests.get(url, headers=headers)
+    response = requests.get(base_url, headers=headers)
     response.encoding = "utf-8"
+
     soup = BeautifulSoup(response.text, "lxml")
 
-    # ===== 1️⃣ 解析标题获取日期 =====
+    links = soup.select("a")
+
+    menu_links = []
+
+    for a in links:
+        text = a.get_text(strip=True)
+        if "自助餐菜单" in text:
+            href = a.get("href")
+            if href:
+                full_url = urljoin(base_url, href)
+                menu_links.append((text, full_url))
+
+    print("📄 找到菜单数量:", len(menu_links))
+
+    if not menu_links:
+        print("❌ 没有找到菜单")
+        return None
+
+    latest_menu = menu_links[0]
+
+    print("📌 选择菜单：", latest_menu[0])
+    print("🔗 链接：", latest_menu[1])
+
+    return latest_menu[1]
+
+
+# ===============================
+# 2️⃣ 解析菜单（自动日期范围）
+# ===============================
+def parse_menu(menu_url):
+    headers = {"User-Agent": "Mozilla/5.0"}
+
+    response = requests.get(menu_url, headers=headers)
+    response.encoding = "utf-8"
+
+    soup = BeautifulSoup(response.text, "lxml")
+
     title = soup.title.get_text(strip=True)
     print("📄 标题：", title)
-    match = re.search(r"(\d{4}年\d{1,2}月\d{1,2}日).*?(\d{4}年\d{1,2}月\d{1,2}日)", title)
+
+    # 提取日期范围
+    match = re.search(
+        r"(\d{4}年\d{1,2}月\d{1,2}日)-(\d{4}年\d{1,2}月\d{1,2}日)",
+        title
+    )
+
     if not match:
-        print("❌ 标题解析失败")
-        return
-    start_str = match.group(1)
-    start_date = datetime.strptime(start_str, "%Y年%m月%d日")
-    print("📅 起始日期：", start_date.date())
+        print("❌ 未识别日期范围")
+        return None
 
-    # ===== 2️⃣ 解析表格 =====
+    start_date = datetime.strptime(match.group(1), "%Y年%m月%d日")
+    end_date = datetime.strptime(match.group(2), "%Y年%m月%d日")
+
+    print("📅 起始日期:", start_date.date())
+    print("📅 结束日期:", end_date.date())
+
     tables = soup.find_all("table")
-    all_data = {}
 
-    week_list = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
+    all_data = {}
 
     for table in tables:
         rows = table.find_all("tr")
+
         if len(rows) < 2:
             continue
+
         week = None
-        for row in rows[:2]:
-            text = row.get_text(strip=True)
-            for w in week_list:
-                if w in text:
-                    week = w
-                    break
-            if week:
+
+        for row in rows:
+            text = row.get_text(" ", strip=True)
+            if "星期" in text:
+                week = text
                 break
+
         if not week:
             continue
+
+        # 清洗
+        week = week.strip().replace(" ", "")
+
         day_data = {}
+
         for row in rows:
             cols = row.find_all("td")
+
             if len(cols) < 2:
                 continue
-            meal_type = cols[0].get_text(strip=True)
+
+            meal = cols[0].get_text(strip=True)
             content = cols[1].get_text("\n", strip=True)
-            if meal_type and content:
-                day_data[meal_type] = content
-        if day_data:
-            all_data[week] = day_data
+
+            if meal:
+                day_data[meal] = content
+
+        all_data[week] = day_data
 
     print("📊 解析结果：", all_data)
-    if not all_data:
-        print("❌ 没解析到菜单数据")
-        return
 
-    # ===== 3️⃣ 生成 ICS =====
+    return all_data, start_date, end_date
 
 
+# ===============================
+# 3️⃣ 生成 ICS（含北京时区）
+# ===============================
+def generate_ics(all_data, start_date, end_date):
     cal = Calendar()
 
-    # 星期顺序
-    week_order = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
-
-    # 餐次时间
-    meal_time_map = {
-        "早 餐": ("早餐", time(7, 0)),
-        "午 餐": ("午餐", time(11, 0)),
-        "晚 餐": ("晚餐", time(17, 0)),
+    meal_time = {
+        "早 餐": (7, 0),
+        "午 餐": (11, 0),
+        "晚 餐": (17, 0)
     }
 
-    start_date = datetime.strptime("2026年3月30日", "%Y年%m月%d日")
+    week_map = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
 
-    for week_name in week_order:
+    total_days = (end_date - start_date).days + 1
 
-        if week_name not in all_data:
+    tz = ZoneInfo("Asia/Shanghai")  # ✅ 北京时区
+
+    print("📌 all_data keys:", list(all_data.keys()))
+
+    for i in range(total_days):
+        current_date = start_date + timedelta(days=i)
+
+        weekday_name = week_map[current_date.weekday()]
+
+        if weekday_name not in all_data:
+            print("⚠️ 跳过:", weekday_name)
             continue
 
-        day_index = week_order.index(week_name)
-        current_date = start_date + timedelta(days=day_index)
+        day_data = all_data[weekday_name]
 
-        meals = all_data[week_name]
-
-        for raw_meal_name, content in meals.items():
-
-            # 处理“早 餐”这种空格问题
-            clean_key = raw_meal_name.replace(" ", "")
-
-            if raw_meal_name in meal_time_map:
-                meal_name, meal_time = meal_time_map[raw_meal_name]
-            elif clean_key in meal_time_map:
-                meal_name, meal_time = meal_time_map[clean_key]
-            else:
+        for meal, content in day_data.items():
+            if meal not in meal_time:
                 continue
 
+            hour, minute = meal_time[meal]
+
+            event_time = current_date.replace(
+                hour=hour,
+                minute=minute,
+                second=0,
+                microsecond=0,
+                tzinfo=tz   # ✅ 关键：时区
+            )
+
             event = Event()
-
-            # ✅ 正确时间（关键）
-            # event.begin = datetime.combine(current_date, meal_time)
-            tz = pytz.timezone("Asia/Shanghai")
-
-            event.begin = tz.localize(datetime.combine(current_date, meal_time))
-            # ✅ 短时长（避免合并/误识别）
-            event.duration = timedelta(minutes=20)
-
-            # ❗ 禁止全天
-            event.make_all_day = False
-
-            # ❗ 无提醒
-            event.alarms = []
-
-            # ✅ 标题：只保留“早餐/午餐/晚餐”
-            event.name = meal_name
-
+            event.name = f"{current_date.month}-{current_date.day} {meal.replace(' ', '')}"
+            event.begin = event_time
+            event.duration = timedelta(minutes=30)
             event.description = content
-
-            # 唯一ID
-            event.uid = f"{week_name}-{meal_name}-{current_date.date()}"
 
             cal.events.add(event)
 
-    with open("menu.ics", "w", encoding="utf-8") as f:
-        f.writelines(cal)
+    return cal
 
-    print("✅ 日历生成完成")
 
+# ===============================
+# 4️⃣ 保存 ICS
+# ===============================
+def save_ics(cal, filename="menu.ics"):
+    with open(filename, "w", encoding="utf-8") as f:
+        f.write(cal.serialize())  # ✅ 官方推荐
+
+
+# ===============================
+# 5️⃣ 主流程
+# ===============================
 if __name__ == "__main__":
-    crawl_menu_and_generate_ics()
+    url = get_latest_menu_url()
+
+    if not url:
+        exit()
+
+    result = parse_menu(url)
+
+    if not result:
+        exit()
+
+    all_data, start_date, end_date = result
+
+    cal = generate_ics(all_data, start_date, end_date)
+
+    save_ics(cal)
+
+    print(f"📅 共生成 {len(cal.events)} 个事件")
+    print("✅ ICS 生成完成：menu.ics")
