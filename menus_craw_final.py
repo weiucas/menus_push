@@ -127,9 +127,9 @@ def generate_ics(all_data, start_date, end_date):
     cal = Calendar()
 
     meal_time = {
-        "早 餐": (7, 0),
-        "午 餐": (11, 0),
-        "晚 餐": (17, 0)
+        "早 餐": (8, 0),
+        "午 餐": (11, 30),
+        "晚 餐": (17, 30)
     }
 
     week_map = ["星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日"]
@@ -175,6 +175,35 @@ def generate_ics(all_data, start_date, end_date):
 
     return cal
 
+# def add_update_notice(cal, now, tz):
+#     event = Event()
+#     event.name = "📢 提示：用餐时间微调"
+#     event.begin = now.replace(hour=6, minute=0, second=0, microsecond=0, tzinfo=tz)
+#     event.duration = timedelta(minutes=10)
+#
+#     event.description = "{"早 餐": (7:00)->(8:00),"午 餐": (11:0))->(11:30),"晚 餐": (17:00)->(17:30)}"
+#
+#     cal.events.add(event)
+def add_update_notice(cal, now, tz):
+    event = Event()
+    event.name = "📢 提示：更新"
+
+    # ✔ 当前时间 + 1天，并固定在早上6点
+    event.begin = (now + timedelta(days=1)).replace(
+        hour=12, minute=0, second=0, microsecond=0, tzinfo=tz
+    )
+
+    # ✔ 最短持续时间（5分钟）
+    event.duration = timedelta(minutes=5)
+
+    # ✔ 简短描述（降低干扰）
+    event.description = (
+        "早 餐: 07:00→08:00\n"
+        "午 餐: 11:00→11:30\n"
+        "晚 餐: 17:00→17:30"
+    )
+
+    cal.events.add(event)
 
 # ===============================
 # 4️⃣ 保存 ICS
@@ -201,6 +230,11 @@ if __name__ == "__main__":
     all_data, start_date, end_date = result
 
     cal = generate_ics(all_data, start_date, end_date)
+
+    '''更新提示'''
+    # tz = ZoneInfo("Asia/Shanghai")
+    # now = datetime.now(tz)
+    # add_update_notice(cal, now, tz)
 
     save_ics(cal)
 

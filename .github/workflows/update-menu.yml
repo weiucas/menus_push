@@ -2,7 +2,7 @@ name: update-menu
 
 on:
   schedule:
-    - cron: '0 2 * * 1'  # 每周一 02:00 UTC（= 北京 10:00）
+    - cron: '0 0 * * 1'  # 每周一 00:00 UTC（= 北京 8:00）
   workflow_dispatch:
 
 permissions:
