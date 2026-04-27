@@ -56,12 +56,13 @@ def parse_menu(menu_url):
 
     soup = BeautifulSoup(response.text, "lxml")
 
-    title = soup.title.get_text(strip=True)
+    # title = soup.title.get_text(strip=True)
+    title = soup.title.get_text(strip=True).replace(" ", "")
     print("📄 标题：", title)
 
     # 提取日期范围
     match = re.search(
-        r"(\d{4}年\d{1,2}月\d{1,2}日)-(\d{4}年\d{1,2}月\d{1,2}日)",
+        r"(\d{4}年\d{1,2}月\d{1,2}日)[—–-](\d{4}年\d{1,2}月\d{1,2}日)",
         title
     )
 
