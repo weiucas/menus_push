@@ -2,150 +2,150 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:ics.py - http://git.io/lLljaA
 BEGIN:VEVENT
-DESCRIPTION:凉菜：凉拌面筋\n热菜：清炒花菜 葱烧豆腐 土豆片 手撕包菜\n主食：南瓜 花卷 馒头 素包子 油条 鸡蛋 肉丸方便面\n汤：玉米圪糁 牛奶
+DESCRIPTION:凉菜：小葱拌豆腐\n热菜：土豆片 炒绿豆芽 番茄瓜片 家常白菜\n主食：玉米 馒头 豆包 花卷 油条 鸡蛋 肉丸方便面\n汤：小米粥 豆浆
 DURATION:PT30M
-DTSTART:20260813T000000Z
-SUMMARY:8-13 早餐
-UID:58c4e3ac-c7ff-469a-86a1-0097ec3ab996@58c4.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:凉菜：素拼\n热菜：青花椒土豆大盘鸡 酸辣白菜 小炒肉 糖醋溜丸 红烧茄子 虎皮尖椒\n水果：应季水果\n主食：大米 打卤面\n汤：小米粥 玉米羹
-DURATION:PT30M
-DTSTART:20260816T033000Z
-SUMMARY:8-16 午餐
-UID:07e03037-2899-46a0-a064-4348864a1841@07e0.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:凉菜：灌肠\n热菜：土豆片炒肉 炒包菜 大葱番茄豆腐 蘑菇肉片\n主食：墨西哥烤肉炒饭 馒头 花卷 葱花饼\n汤：玉米豆汤 油茶
-DURATION:PT30M
-DTSTART:20260814T093000Z
-SUMMARY:8-14 晚餐
-UID:65db1085-ec72-472d-a387-6d0f332e0a11@65db.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:凉菜：凉拌海带丝\n热菜：合菜（肉） 蒜苔肉片 手撕包菜 油麦菜\n主食：鸡蛋火腿炒大米 烤馒头 烤花卷 糖糕\n汤：玉米圪糁 酸菜不烂汤
-DURATION:PT30M
-DTSTART:20260810T093000Z
-SUMMARY:8-10 晚餐
-UID:c9997291-9a35-4a6e-8114-1068c653f02a@c999.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:凉菜：凉粉\n热菜：麻辣翅根 山西过油肉 毛头丸 红烧茄子 西红柿鸡蛋 清炒葫芦瓜\n水果：应季水果\n主食：大米 米山卤面\n汤：绿豆小米粥 银耳雪梨汤
-DURATION:PT30M
-DTSTART:20260813T033000Z
-SUMMARY:8-13 午餐
-UID:2f4ff5d2-226c-49fc-b264-f01dc92f2e67@2f4f.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:凉菜：素拼\n热菜：洋葱炒肉 酸辣白菜 炝锅油菜 干锅土豆片\n主食：炒饼丝 小花卷 素包子 馒头\n汤：玉米疙糁 胡辣汤
-DURATION:PT30M
-DTSTART:20260815T093000Z
-SUMMARY:8-15 晚餐
-UID:fe8f5091-12ea-4c66-b44e-41ee98c32172@fe8f.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:凉菜：小葱拌豆腐\n热莱：萝卜丝 溜豆芽 醋溜白菜 土豆丝\n主食：南瓜 花卷 馒头 素包子 鸡蛋 油条 肉丸方便面\n汤：小米粥 豆浆
-DURATION:PT30M
-DTSTART:20260811T000000Z
-SUMMARY:8-11 早餐
-UID:c723c88f-778f-4f94-b2e1-0f404b9afba8@c723.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:凉菜：凉拌莲菜\n热菜：土豆丝 醋溜白菜 清炒绿豆芽 清炒瓜片\n主食：玉米 花卷 馒头 素包子 鸡蛋 油条 方便面肉丸\n汤：小米粥 牛奶
-DURATION:PT30M
-DTSTART:20260810T000000Z
-SUMMARY:8-10 早餐
-UID:381d28d3-d849-4880-a3f9-03ebb4ab137d@381d.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:凉菜：小葱拌豆腐\n热菜：菜花 鸡蛋西红柿 手撕包菜 豆角炒肉\n主食：馒头 花卷 葱花饼 土豆丝炒煎饼\n汤：花生红枣大米粥 鸡蛋不烂汤
-DURATION:PT30M
-DTSTART:20260816T093000Z
-SUMMARY:8-16 晚餐
-UID:0618a825-b09a-45b5-8f8a-7e91472e7e2a@0618.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:凉菜：洋葱拌木耳\n热菜：土豆片 萝卜丝豆芽 清炒冬瓜 手撕包菜\n主食：南瓜 花卷 馒头 包子 鸡蛋 肉丸方便面\n汤：小米粥 牛奶
-DURATION:PT30M
-DTSTART:20260815T000000Z
-SUMMARY:8-15 早餐
-UID:d59cf253-590c-458b-b698-4ea34bf4e3c4@d59c.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:凉菜：爽口莲菜\n热菜：大骨头 鱼香茄子 尖椒肉丝 蒜蓉油麦菜 芹菜炒腊肠 清炒娃娃菜\n水果：应季水果\n主食：大米 炒猫耳朵\n汤：小米粥 紫菜蛋汤
-DURATION:PT30M
-DTSTART:20260815T033000Z
-SUMMARY:8-15 午餐
-UID:12ff4399-90ab-4c3b-9a22-8185570601a1@12ff.org
+DTSTART:20260814T000000Z
+SUMMARY:8-14 早餐
+UID:a72b395c-171e-44ed-9209-0ef469e975c3@a72b.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:凉菜：凉拌豆腐丝\n热菜：土豆丝 醋溜白菜 炝炒萝卜丝 葱烧豆腐\n主食：玉米 馒头 花卷 素包子 鸡蛋 肉丸方便面\n汤：小米粥 牛奶
 DURATION:PT30M
 DTSTART:20260816T000000Z
 SUMMARY:8-16 早餐
-UID:ef6053d6-2f1b-4266-b58d-78708f2ee6f4@ef60.org
+UID:1721c015-4a54-4091-99df-dc07c60e3f67@1721.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:凉菜：拌腐竹\n热菜：辣子鸡丁 手工丸子 白菜粉条 炒包菜\n主食：花卷 豆包 花样馒头 白菜炒馒头 锅贴\n汤：江米粥 胡辣汤
+DESCRIPTION:凉菜：小葱拌豆腐\n热莱：萝卜丝 溜豆芽 醋溜白菜 土豆丝\n主食：南瓜 花卷 馒头 素包子 鸡蛋 油条 肉丸方便面\n汤：小米粥 豆浆
 DURATION:PT30M
-DTSTART:20260811T093000Z
-SUMMARY:8-11 晚餐
-UID:ebec37ff-54dc-4928-8d75-6fde1a88cd16@ebec.org
+DTSTART:20260811T000000Z
+SUMMARY:8-11 早餐
+UID:aa42b6e5-d807-4685-be97-9f891d7546f9@aa42.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:凉菜：拌黄瓜\n热菜：土豆丝 黄豆芽萝卜丝 炒包心菜 清炒冬瓜\n主食：玉米 花卷 鸡蛋 馒头 素包子 油条 肉丸方便面\n汤：小米粥 油茶
+DESCRIPTION:凉菜：凉拌面筋\n热菜：清炒花菜 葱烧豆腐 土豆片 手撕包菜\n主食：南瓜 花卷 馒头 素包子 油条 鸡蛋 肉丸方便面\n汤：玉米圪糁 牛奶
 DURATION:PT30M
-DTSTART:20260812T000000Z
-SUMMARY:8-12 早餐
-UID:cf9f3ba8-ae58-4311-aa26-394a5a909aa0@cf9f.org
+DTSTART:20260813T000000Z
+SUMMARY:8-13 早餐
+UID:cc84034e-3b4e-44f3-9526-0137bd1e90e3@cc84.org
 END:VEVENT
 BEGIN:VEVENT
-DESCRIPTION:凉菜：拍黄瓜\n热菜：上海老酱小鸡腿 土豆片炒肉 螺蛳椒炒肉丝 小瓜炒鸡蛋 粉丝娃娃菜金针菇 小炒皇\n水果：应季水果\n主食：大米 清汤饸饹\n汤：红豆小米粥 鸡蛋紫菜汤
+DESCRIPTION:凉菜：爽口莲菜\n热菜：大骨头 鱼香茄子 尖椒肉丝 蒜蓉油麦菜 芹菜炒腊肠 清炒娃娃菜\n水果：应季水果\n主食：大米 炒猫耳朵\n汤：小米粥 紫菜蛋汤
 DURATION:PT30M
-DTSTART:20260811T033000Z
-SUMMARY:8-11 午餐
-UID:a7001acf-d1bf-40ed-9a79-db5ce505dfad@a700.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:凉菜：西红柿拌生菜\n热菜：红烧肉 外婆菜炒肉末 蒜泥茄条 大葱木耳烧豆腐 虾皮冬瓜 土豆烧豆角\n水果：应季水果\n主食：大米 打卤面\n汤：杂豆汤 玉米羹
-DURATION:PT30M
-DTSTART:20260810T033000Z
-SUMMARY:8-10 午餐
-UID:a8dd5380-3391-4fdb-90bd-e44e7ab0f6bc@a8dd.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:凉菜：酸辣海带丝\n热菜：水煮肉片 核桃肉 长豆角粉皮炒鸡蛋 蒸茼蒿 湘味土豆条烧茄条 干锅菜花\n水果：应季水果\n主食：大米 炸酱面\n汤：黄豆小米粥 山楂汤
-DURATION:PT30M
-DTSTART:20260814T033000Z
-SUMMARY:8-14 午餐
-UID:2475deb7-887e-4017-a419-743fa0e6876d@2475.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:凉菜：小葱拌豆腐\n热菜：土豆片 炒绿豆芽 番茄瓜片 家常白菜\n主食：玉米 馒头 豆包 花卷 油条 鸡蛋 肉丸方便面\n汤：小米粥 豆浆
-DURATION:PT30M
-DTSTART:20260814T000000Z
-SUMMARY:8-14 早餐
-UID:fc10e149-7fca-4781-a331-5aa2a3fc3d14@fc10.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:凉菜：石花菜\n热菜：羊杂 洋葱炒肉丝 肉烩菜 清炒西兰花 酸甜狼牙土豆 农家烧豆腐\n水果：应季水果\n主食：大米 打卤面(西红柿鸡蛋 杂酱）\n汤： 绿豆汤 米酒汤圆
-DURATION:PT30M
-DTSTART:20260812T033000Z
-SUMMARY:8-12 午餐
-UID:80122b57-f98a-4f1b-b9e9-e4b8d16f1ebe@8012.org
-END:VEVENT
-BEGIN:VEVENT
-DESCRIPTION:凉菜：酸辣土豆片\n热菜：香菇鸡丁 肉末山药粉皮 蒜蓉茄条 空心菜\n主食：包子 花卷 糖三角 韭菜盒 大葱鸡蛋炒大米\n汤：玉米豆汤 鸡蛋不烂汤
-DURATION:PT30M
-DTSTART:20260812T093000Z
-SUMMARY:8-12 晚餐
-UID:23ccabff-dca8-4a8e-9aed-36705588dda7@23cc.org
+DTSTART:20260815T033000Z
+SUMMARY:8-15 午餐
+UID:e84f47a5-ba64-432a-b1a2-121b24b5ad2b@e84f.org
 END:VEVENT
 BEGIN:VEVENT
 DESCRIPTION:凉菜：素拼\n热菜：豆角炒肉丝 蒜苗炒肉片 炒腐竹 韭菜炒豆筋卷\n主食：花样馒头 素包子 花卷 水煎包 腊肠炒饭\n汤：玉米圪糁 煮疙瘩
 DURATION:PT30M
 DTSTART:20260813T093000Z
 SUMMARY:8-13 晚餐
-UID:d0af44d6-3242-40a4-b938-9d4c7c09eef5@d0af.org
+UID:ec7b0c2f-3866-43e7-ba21-2f7aa22e910d@ec7b.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：凉拌莲菜\n热菜：土豆丝 醋溜白菜 清炒绿豆芽 清炒瓜片\n主食：玉米 花卷 馒头 素包子 鸡蛋 油条 方便面肉丸\n汤：小米粥 牛奶
+DURATION:PT30M
+DTSTART:20260810T000000Z
+SUMMARY:8-10 早餐
+UID:e0a7b29f-47f5-40a7-82de-149dc0857789@e0a7.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：凉拌海带丝\n热菜：合菜（肉） 蒜苔肉片 手撕包菜 油麦菜\n主食：鸡蛋火腿炒大米 烤馒头 烤花卷 糖糕\n汤：玉米圪糁 酸菜不烂汤
+DURATION:PT30M
+DTSTART:20260810T093000Z
+SUMMARY:8-10 晚餐
+UID:6987d589-4c4c-4967-b302-e944865d0ccb@6987.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：素拼\n热菜：青花椒土豆大盘鸡 酸辣白菜 小炒肉 糖醋溜丸 红烧茄子 虎皮尖椒\n水果：应季水果\n主食：大米 打卤面\n汤：小米粥 玉米羹
+DURATION:PT30M
+DTSTART:20260816T033000Z
+SUMMARY:8-16 午餐
+UID:a1a307be-9e83-4f7d-81ff-600db154cbe8@a1a3.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：拍黄瓜\n热菜：上海老酱小鸡腿 土豆片炒肉 螺蛳椒炒肉丝 小瓜炒鸡蛋 粉丝娃娃菜金针菇 小炒皇\n水果：应季水果\n主食：大米 清汤饸饹\n汤：红豆小米粥 鸡蛋紫菜汤
+DURATION:PT30M
+DTSTART:20260811T033000Z
+SUMMARY:8-11 午餐
+UID:b927e77a-5255-478d-9123-ff65fc129bff@b927.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：石花菜\n热菜：羊杂 洋葱炒肉丝 肉烩菜 清炒西兰花 酸甜狼牙土豆 农家烧豆腐\n水果：应季水果\n主食：大米 打卤面(西红柿鸡蛋 杂酱）\n汤： 绿豆汤 米酒汤圆
+DURATION:PT30M
+DTSTART:20260812T033000Z
+SUMMARY:8-12 午餐
+UID:d31ccd3b-9638-4ba3-af0e-02969ebe61a3@d31c.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：酸辣土豆片\n热菜：香菇鸡丁 肉末山药粉皮 蒜蓉茄条 空心菜\n主食：包子 花卷 糖三角 韭菜盒 大葱鸡蛋炒大米\n汤：玉米豆汤 鸡蛋不烂汤
+DURATION:PT30M
+DTSTART:20260812T093000Z
+SUMMARY:8-12 晚餐
+UID:6a4d9d0d-f85b-4e0e-a372-b1215207fae2@6a4d.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：凉粉\n热菜：麻辣翅根 山西过油肉 毛头丸 红烧茄子 西红柿鸡蛋 清炒葫芦瓜\n水果：应季水果\n主食：大米 米山卤面\n汤：绿豆小米粥 银耳雪梨汤
+DURATION:PT30M
+DTSTART:20260813T033000Z
+SUMMARY:8-13 午餐
+UID:0178d2d5-d5eb-44fe-b988-f7d391512023@0178.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：灌肠\n热菜：土豆片炒肉 炒包菜 大葱番茄豆腐 蘑菇肉片\n主食：墨西哥烤肉炒饭 馒头 花卷 葱花饼\n汤：玉米豆汤 油茶
+DURATION:PT30M
+DTSTART:20260814T093000Z
+SUMMARY:8-14 晚餐
+UID:60eddb0c-56be-4fc2-a0e8-71df611c0726@60ed.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：素拼\n热菜：洋葱炒肉 酸辣白菜 炝锅油菜 干锅土豆片\n主食：炒饼丝 小花卷 素包子 馒头\n汤：玉米疙糁 胡辣汤
+DURATION:PT30M
+DTSTART:20260815T093000Z
+SUMMARY:8-15 晚餐
+UID:cef27b7f-1d4e-4185-9ba3-d2002e2b23f0@cef2.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：酸辣海带丝\n热菜：水煮肉片 核桃肉 长豆角粉皮炒鸡蛋 蒸茼蒿 湘味土豆条烧茄条 干锅菜花\n水果：应季水果\n主食：大米 炸酱面\n汤：黄豆小米粥 山楂汤
+DURATION:PT30M
+DTSTART:20260814T033000Z
+SUMMARY:8-14 午餐
+UID:068ca7aa-c320-4abf-9009-53aacf7dcabc@068c.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：小葱拌豆腐\n热菜：菜花 鸡蛋西红柿 手撕包菜 豆角炒肉\n主食：馒头 花卷 葱花饼 土豆丝炒煎饼\n汤：花生红枣大米粥 鸡蛋不烂汤
+DURATION:PT30M
+DTSTART:20260816T093000Z
+SUMMARY:8-16 晚餐
+UID:3109f46e-d046-43d6-9472-9a2f6ea2eb52@3109.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：拌黄瓜\n热菜：土豆丝 黄豆芽萝卜丝 炒包心菜 清炒冬瓜\n主食：玉米 花卷 鸡蛋 馒头 素包子 油条 肉丸方便面\n汤：小米粥 油茶
+DURATION:PT30M
+DTSTART:20260812T000000Z
+SUMMARY:8-12 早餐
+UID:89524379-9eee-4c89-8170-89149d71813d@8952.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：拌腐竹\n热菜：辣子鸡丁 手工丸子 白菜粉条 炒包菜\n主食：花卷 豆包 花样馒头 白菜炒馒头 锅贴\n汤：江米粥 胡辣汤
+DURATION:PT30M
+DTSTART:20260811T093000Z
+SUMMARY:8-11 晚餐
+UID:043ecf10-832e-4725-82f3-80e6787528e2@043e.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：西红柿拌生菜\n热菜：红烧肉 外婆菜炒肉末 蒜泥茄条 大葱木耳烧豆腐 虾皮冬瓜 土豆烧豆角\n水果：应季水果\n主食：大米 打卤面\n汤：杂豆汤 玉米羹
+DURATION:PT30M
+DTSTART:20260810T033000Z
+SUMMARY:8-10 午餐
+UID:532d958a-a91d-4341-9f99-afb76a2f4575@532d.org
+END:VEVENT
+BEGIN:VEVENT
+DESCRIPTION:凉菜：洋葱拌木耳\n热菜：土豆片 萝卜丝豆芽 清炒冬瓜 手撕包菜\n主食：南瓜 花卷 馒头 包子 鸡蛋 肉丸方便面\n汤：小米粥 牛奶
+DURATION:PT30M
+DTSTART:20260815T000000Z
+SUMMARY:8-15 早餐
+UID:e534204f-b8dc-475a-b2e8-4d5f0073492d@e534.org
 END:VEVENT
 END:VCALENDAR
